@@ -1,11 +1,12 @@
-# Waqas | AI Developer & Software Engineer Portfolio
+# Waqas Ahmad | AI Engineering Student Portfolio
 
 Personal lifetime portfolio website engineered with clean architectural principles, responsive design, and dynamic backend integration.
 
 ## 🚀 Live Demo
 - **URL**: Hosted on Vercel / GitHub Pages
-- **Developer**: Waqas ([@connect2waqas](https://github.com/connect2waqas))
-- **Location**: Abbottabad, Pakistan
+- **Developer**: Waqas Ahmad ([@connect2waqas](https://github.com/connect2waqas))
+- **Program**: B.S. Artificial Intelligence (BSAI-5C) &bull; University of Haripur
+- **Location**: Haripur, Pakistan
 
 ---
 

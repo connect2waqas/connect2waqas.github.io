@@ -1,11 +1,11 @@
-# Waqas Ahmad | AI Engineering Student Portfolio
+# Waqas Ahmad | AI & Python Engineer Portfolio
 
-Personal lifetime portfolio website engineered with clean architectural principles, responsive design, and dynamic backend integration.
+Personal portfolio website engineered with clean architectural principles, responsive design, and dynamic backend integration.
 
-## 🚀 Live Demo
-- **URL**: Hosted on Vercel / GitHub Pages
+## 🚀 Overview
 - **Developer**: Waqas Ahmad ([@connect2waqas](https://github.com/connect2waqas))
-- **Program**: B.S. Artificial Intelligence (BSAI-5C) &bull; University of Haripur
+- **Program**: B.S. Artificial Intelligence &bull; University of Haripur
+- **Internship**: AI Engineering Intern at Decode Labs (Remote)
 - **Location**: Haripur, Pakistan
 
 ---

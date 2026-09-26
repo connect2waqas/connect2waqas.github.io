@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
   <!-- SEO & Social Meta Tags -->
-  <title>Waqas | AI Developer & Software Engineer</title>
-  <meta name="description" content="Portfolio of Waqas - AI Developer & Software Engineer based in Abbottabad, Pakistan. Specializing in Python, AI Mathematics, Object-Oriented Architecture, and PostgreSQL Systems." />
+  <title>Waqas | CS Student & Aspiring AI Developer</title>
+  <meta name="description" content="Portfolio of Waqas - 5th-semester Computer Science student based in Abbottabad, Pakistan. Passionate about Python, AI fundamentals, OOP, NumPy, Pandas, and Database Systems." />
   <meta name="author" content="Waqas (connect2waqas)" />
-  <meta name="keywords" content="Waqas, AI Developer, Python, NumPy, Tensors, OOP, PostgreSQL, Software Engineer, Abbottabad, Pakistan, Supabase" />
+  <meta name="keywords" content="Waqas, Computer Science Student, 5th Semester, AI Developer, Python, NumPy, Pandas, OOP, Abbottabad, Pakistan" />
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Waqas | AI Developer & Software Engineer" />
-  <meta property="og:description" content="Engineering AI Systems with Clean Code & Mathematics. Python, NumPy, Advanced OOP, and PostgreSQL Architecture." />
+  <meta property="og:title" content="Waqas | CS Student & Aspiring AI Developer" />
+  <meta property="og:description" content="5th-semester Computer Science student in Abbottabad, Pakistan. Building practical Python, AI math, and OOP projects. Open to internships." />
   <meta property="og:image" content="assets/waqas.jpg" />
 
   <!-- Google Fonts: Inter & JetBrains Mono -->
@@ -27,7 +27,7 @@
   <!-- Supabase JS SDK CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-  <!-- Tailwind Configuration matching the exact #016782 reference palette -->
+  <!-- Tailwind Configuration matching the #016782 brand palette -->
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -45,8 +45,8 @@
               200: '#b4e1eb',
               300: '#7fc9dc',
               400: '#43a9c5',
-              500: '#016782', // Reference Primary Teal
-              600: '#015165', // Reference Hover Teal
+              500: '#016782', // Primary Teal
+              600: '#015165', // Hover Teal
               700: '#013e4e',
               800: '#023340',
               900: '#032a35',
@@ -62,7 +62,7 @@
   </script>
 
   <style>
-    /* Custom sleek scrollbars */
+    /* Sleek minimal scrollbars */
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
@@ -82,7 +82,7 @@
       background: #016782;
     }
 
-    /* Subtle geometric grid background pattern matching connect2abdulaziz */
+    /* Subtle geometric grid background pattern */
     .bg-pattern-light {
       background-color: #f8fafc;
       background-image: radial-gradient(#016782 0.75px, transparent 0.75px), radial-gradient(#016782 0.75px, #f8fafc 0.75px);
@@ -106,32 +106,26 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
-
-    /* Glass card blur */
-    .glass-card {
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
   </style>
 </head>
 
 <body class="bg-pattern-light dark:bg-pattern-dark bg-slate-50 dark:bg-[#0b0f19] text-gray-800 dark:text-gray-200 font-sans transition-colors duration-300 min-h-screen relative overflow-x-hidden selection:bg-[#016782] selection:text-white">
 
   <!-- ========================================================== -->
-  <!-- 1. FLOATING RESPONSIVE NAVBAR                             -->
+  <!-- 1. FLOATING RESPONSIVE HEADER                               -->
   <!-- ========================================================== -->
   <header class="fixed top-0 left-0 right-0 w-full z-50 flex justify-center pt-2 sm:pt-4 px-3 sm:px-4 pointer-events-none">
-    <div class="pointer-events-auto w-full max-w-6xl py-2.5 sm:py-3.5 px-4 sm:px-6 bg-white/80 dark:bg-gray-900/85 backdrop-blur-xl border border-gray-200/90 dark:border-gray-800/90 shadow-lg shadow-black/5 dark:shadow-black/20 rounded-2xl transition-all duration-300 flex items-center justify-between">
+    <div class="pointer-events-auto w-full max-w-6xl py-2.5 sm:py-3.5 px-4 sm:px-6 bg-white/85 dark:bg-gray-900/85 backdrop-blur-xl border border-gray-200/90 dark:border-gray-800/90 shadow-lg shadow-black/5 dark:shadow-black/20 rounded-2xl transition-all duration-300 flex items-center justify-between">
       
       <!-- Brand Logo -->
       <a href="#home" class="flex items-center space-x-2.5 group shrink-0">
         <div class="relative">
-          <img src="assets/waqas.jpg" alt="Waqas" class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover border-2 border-[#016782] shadow-md group-hover:scale-105 transition-transform duration-200" />
+          <img src="assets/waqas.jpg" alt="Waqas" class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover border-2 border-[#016782] shadow-sm group-hover:scale-105 transition-transform duration-200" />
           <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border border-white dark:border-gray-900"></span>
         </div>
         <div class="flex flex-col">
           <span class="text-sm sm:text-base font-bold text-gray-900 dark:text-white tracking-tight leading-none">Waqas</span>
-          <span class="text-[10px] font-mono text-[#016782] dark:text-[#43a9c5] font-medium leading-tight">ai.engineer</span>
+          <span class="text-[10px] font-mono text-[#016782] dark:text-[#43a9c5] font-medium leading-tight mt-0.5">5th Sem &bull; CS Student</span>
         </div>
       </a>
 
@@ -141,7 +135,7 @@
           <li><a href="#home" class="px-3 py-1.5 rounded-full text-gray-700 dark:text-gray-200 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">Home</a></li>
           <li><a href="#about" class="px-3 py-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">About</a></li>
           <li><a href="#projects" class="px-3 py-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">Projects</a></li>
-          <li><a href="#journey" class="px-3 py-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">Journey</a></li>
+          <li><a href="#journey" class="px-3 py-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">Studies</a></li>
           <li><a href="#skills" class="px-3 py-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">Skills</a></li>
           <li><a href="#contact" class="px-3 py-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-[#016782] dark:hover:text-[#43a9c5] hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-colors">Contact</a></li>
         </ul>
@@ -174,11 +168,11 @@
             </svg>
           </button>
           <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 text-[11px] font-medium rounded-md bg-gray-900 text-white whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 shadow-lg hidden sm:block">
-            Ask AI Anything
+            Ask AI Assistant
           </div>
         </div>
 
-        <!-- Dark / Light Theme Toggle -->
+        <!-- Theme Toggle -->
         <button id="theme-toggle-btn" class="p-2 sm:p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shadow-sm" aria-label="Toggle Theme">
           <svg id="theme-sun-icon" class="w-4 h-4 sm:w-4.5 sm:h-4.5 text-amber-400 hidden" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" />
@@ -202,13 +196,13 @@
     </div>
   </header>
 
-  <!-- Mobile Dropdown Navigation Drawer -->
-  <div id="mobile-nav-drawer" class="fixed top-20 left-4 right-4 z-40 bg-white/95 dark:bg-gray-900/95 backdrop-blur-2xl border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl p-5 space-y-3 hidden transition-all duration-300 lg:hidden">
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="fixed top-18 left-4 right-4 z-40 bg-white/95 dark:bg-gray-900/95 backdrop-blur-2xl border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl p-5 space-y-3 hidden transition-all duration-300 lg:hidden">
     <div class="flex items-center space-x-3 pb-3 border-b border-gray-200 dark:border-gray-800">
       <img src="assets/waqas.jpg" alt="Waqas" class="w-10 h-10 rounded-full object-cover border-2 border-[#016782]" />
       <div>
         <div class="text-sm font-bold text-gray-900 dark:text-white">Waqas</div>
-        <div class="text-xs text-[#016782] dark:text-[#43a9c5]">AI Developer &bull; Abbottabad, PK</div>
+        <div class="text-xs text-[#016782] dark:text-[#43a9c5]">5th Semester CS &bull; Abbottabad, PK</div>
       </div>
     </div>
     <nav class="space-y-1">
@@ -217,23 +211,23 @@
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
       <a href="#about" class="mobile-nav-link flex items-center justify-between p-2.5 rounded-xl text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
-        <span>About</span>
+        <span>About &amp; Learning</span>
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
       <a href="#projects" class="mobile-nav-link flex items-center justify-between p-2.5 rounded-xl text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
-        <span>Featured Projects</span>
+        <span>Semester Projects</span>
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
       <a href="#journey" class="mobile-nav-link flex items-center justify-between p-2.5 rounded-xl text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
-        <span>Journey</span>
+        <span>Academic Studies</span>
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
       <a href="#skills" class="mobile-nav-link flex items-center justify-between p-2.5 rounded-xl text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
-        <span>Technical Skills</span>
+        <span>Skills</span>
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
       <a href="#contact" class="mobile-nav-link flex items-center justify-between p-2.5 rounded-xl text-sm font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
-        <span>Contact &amp; Guestbook</span>
+        <span>Contact</span>
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
     </nav>
@@ -250,43 +244,41 @@
     <div id="portfolio-view" class="space-y-24 sm:space-y-32 transition-opacity duration-300">
       
       <!-- HERO SECTION -->
-      <section id="home" class="min-h-[75vh] flex flex-col items-center justify-center text-center scroll-mt-28 pt-4 sm:pt-8">
+      <section id="home" class="min-h-[72vh] flex flex-col items-center justify-center text-center scroll-mt-28 pt-4 sm:pt-8">
         
-        <!-- Profile Picture Container with Dual-Ring Glow Effect -->
-        <div class="relative mb-6 sm:mb-8 group cursor-pointer">
-          <!-- Ambient Glow Sphere -->
-          <div class="absolute -inset-1.5 bg-gradient-to-r from-[#016782] via-[#0284c7] to-cyan-400 rounded-full blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
+        <!-- Portrait Photo with Glow Ring -->
+        <div class="relative mb-6 sm:mb-8 group">
+          <div class="absolute -inset-1.5 bg-gradient-to-r from-[#016782] via-[#0284c7] to-cyan-400 rounded-full blur-lg opacity-40 group-hover:opacity-70 transition duration-500"></div>
           
           <div class="relative w-36 h-36 sm:w-48 sm:h-48 rounded-full p-1.5 bg-gradient-to-tr from-[#016782] via-[#0284c7] to-cyan-300 shadow-2xl">
-            <img src="assets/waqas.jpg" alt="Waqas - AI Developer & Software Engineer"
+            <img src="assets/waqas.jpg" alt="Waqas - Computer Science Student"
                  class="w-full h-full rounded-full object-cover border-4 border-white dark:border-gray-900 shadow-inner group-hover:scale-105 transition-transform duration-300" />
           </div>
 
-          <!-- Pulsing Status Badge -->
+          <!-- Student Status Badge -->
           <div class="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg text-[10px] sm:text-xs font-semibold text-emerald-600 dark:text-emerald-400">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Open to AI Roles</span>
+            <span>Open to Internships</span>
           </div>
         </div>
 
-        <!-- Name & Headline -->
+        <!-- Headline & Bio -->
         <div class="space-y-4 max-w-3xl mx-auto px-2">
           
-          <!-- Location Pill -->
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#016782]/10 dark:bg-[#016782]/20 border border-[#016782]/30 text-xs font-medium text-[#016782] dark:text-[#43a9c5]">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#016782]/10 dark:bg-[#016782]/20 border border-[#016782]/30 text-xs font-medium text-[#016782] dark:text-[#43a9c5]">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
             </svg>
-            <span>Abbottabad, Pakistan &bull; AI Developer</span>
+            <span>5th Semester CS Student &bull; Abbottabad, Pakistan</span>
           </div>
 
-          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+          <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 dark:text-white tracking-tight">
             Hi, I'm <span class="text-[#016782] dark:text-[#43a9c5]">Waqas</span>
           </h1>
 
-          <div class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-200">
-            AI Developer &bull; Software Engineer
+          <div class="text-lg sm:text-2xl font-bold text-gray-800 dark:text-gray-200">
+            Aspiring AI Developer &bull; Computer Science Student
           </div>
 
           <!-- Dynamic Typing Tagline -->
@@ -294,7 +286,7 @@
             <span id="hero-typing" class="typing-cursor font-medium"></span>
           </p>
 
-          <!-- CTA Buttons & Social Links -->
+          <!-- Action Buttons -->
           <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-4 sm:pt-6">
             <a href="#contact" class="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#016782] hover:bg-[#015165] text-white font-semibold text-xs sm:text-sm shadow-lg shadow-[#016782]/25 transition-all duration-200 transform hover:-translate-y-0.5">
               <span>Contact me</span>
@@ -304,13 +296,13 @@
             </a>
 
             <a href="#projects" class="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700/80 text-gray-800 dark:text-gray-200 font-semibold text-xs sm:text-sm border border-gray-200 dark:border-gray-700 shadow-sm transition-all duration-200 transform hover:-translate-y-0.5">
-              <span>Explore Projects</span>
+              <span>Semester Projects</span>
               <svg class="w-4 h-4 text-[#016782]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </a>
 
-            <!-- Social Icon Buttons -->
+            <!-- Social Links -->
             <div class="flex items-center gap-2 pt-2 sm:pt-0">
               <a href="https://linkedin.com/in/connect2waqas" target="_blank" rel="noopener noreferrer" 
                  class="p-2.5 sm:p-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:text-white hover:bg-[#016782] dark:hover:bg-[#016782] transition-all duration-200 shadow-sm" title="LinkedIn">
@@ -331,7 +323,7 @@
 
       </section>
 
-      <!-- SECTION SEPARATOR PILL -->
+      <!-- SEPARATOR -->
       <div class="flex justify-center -my-12 sm:-my-16">
         <div class="h-12 sm:h-16 w-1 bg-[#016782]/30 rounded-full"></div>
       </div>
@@ -339,10 +331,10 @@
       <!-- ABOUT SECTION -->
       <section id="about" class="scroll-mt-28 space-y-12">
         <div class="text-center space-y-3">
-          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Engineering Philosophy</div>
-          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">About Me</h2>
+          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Student Profile</div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">About My Studies &amp; Goals</h2>
           <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-            Based in Abbottabad, Pakistan. Passionate about decomposing complex AI models into clean mathematical fundamentals and architecting robust, production-grade Python backend systems.
+            I am currently in my <strong>5th semester of Computer Science</strong> in Abbottabad, Pakistan. I am building a strong foundation in core computer science subjects, working on practical semester projects, and preparing for software engineering and AI internships.
           </p>
         </div>
 
@@ -352,24 +344,24 @@
           <div class="p-6 sm:p-8 rounded-3xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-200 dark:border-gray-800 shadow-md hover:border-[#016782]/50 hover:shadow-xl transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#016782]/10 dark:bg-[#016782]/20 flex items-center justify-center text-[#016782] mb-5">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
             </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">AI Math &amp; Vectorization</h3>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Python &amp; OOP Foundations</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-              Writing vector operations from mathematical equations: array broadcasting rules, 3D tensor fancy indexing, contiguous memory blocks, and loss functions (Binary Cross-Entropy &amp; MSE).
+              Studying and practicing core Object-Oriented principles in Python: classes, inheritance, encapsulation, polymorphism, property decorators, and modular design through semester projects.
             </p>
           </div>
 
           <div class="p-6 sm:p-8 rounded-3xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-200 dark:border-gray-800 shadow-md hover:border-[#016782]/50 hover:shadow-xl transition-all duration-300">
             <div class="w-12 h-12 rounded-2xl bg-[#016782]/10 dark:bg-[#016782]/20 flex items-center justify-center text-[#016782] mb-5">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Object-Oriented Architecture</h3>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">NumPy &amp; Data Analysis</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-              Mastering Python internal mechanics: custom property descriptors, Method Resolution Order (MRO), encapsulation boundaries, and functional decorators for clean enterprise codebases.
+              Practicing data manipulation with NumPy arrays, matrix operations, indexing, and Pandas DataFrames for data cleaning, basic statistics, and introductory AI mathematics.
             </p>
           </div>
 
@@ -379,9 +371,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
               </svg>
             </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Three-Schema Database Systems</h3>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">DSA &amp; Relational Databases</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-              Practical application of the ANSI/SPARC Three-Schema model: physical storage decoupling, logical relational schema design in PostgreSQL, and safe client views protected by Supabase RLS.
+              Coursework in Data Structures (Arrays, Stacks, Queues, Linked Lists) and Database Systems (SQL queries, normalization, table relationships, and PostgreSQL / MySQL).
             </p>
           </div>
 
@@ -389,38 +381,38 @@
 
         <!-- 4 Key Numbers / Metrics Banner -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-2">
-          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm hover:border-[#016782]/30 transition-colors">
-            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">100%</div>
-            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Vectorized Computations</div>
+          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm">
+            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">5th</div>
+            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Semester CS Student</div>
           </div>
-          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm hover:border-[#016782]/30 transition-colors">
-            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">5+</div>
-            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">OOP Backend Architectures</div>
+          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm">
+            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">10+</div>
+            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Hands-On Repositories</div>
           </div>
-          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm hover:border-[#016782]/30 transition-colors">
-            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">3-Tier</div>
-            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Schema Architecture</div>
+          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm">
+            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">Python</div>
+            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Primary Language</div>
           </div>
-          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm hover:border-[#016782]/30 transition-colors">
-            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">Live</div>
-            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Continuous Vercel CI/CD</div>
+          <div class="p-5 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 text-center shadow-sm">
+            <div class="text-2xl sm:text-3xl font-extrabold text-[#016782] dark:text-[#43a9c5] font-mono mb-1">2026/27</div>
+            <div class="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wider font-medium">Seeking Internships</div>
           </div>
         </div>
       </section>
 
-      <!-- FEATURED PROJECTS (EXTENDED REALISTIC CARDS) -->
+      <!-- SEMESTER PROJECTS SECTION -->
       <section id="projects" class="scroll-mt-28 space-y-12">
         <div class="text-center space-y-3">
-          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Production Case Studies</div>
+          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Semester Projects &amp; Lab Work</div>
           <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Featured Projects</h2>
           <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-            In-depth architectural implementations demonstrating Python OOP, system use-cases, and mathematical AI loss functions.
+            Real academic and self-guided projects I have developed to master Python, OOP concepts, and data libraries.
           </p>
         </div>
 
         <div class="space-y-8">
           
-          <!-- Project 1: Hotel Management System -->
+          <!-- Project 1: Hospital Management System -->
           <div class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-2 border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden shadow-xl hover:border-[#016782]/50 transition-all duration-300">
             <div class="grid lg:grid-cols-2 gap-0">
               
@@ -433,18 +425,21 @@
                       <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
                       <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
                     </div>
-                    <span class="text-xs font-mono text-slate-400">hotel_system/descriptors.py</span>
+                    <span class="text-xs font-mono text-slate-400">hospital_system.py</span>
                   </div>
-                  <pre class="p-4 text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed"><span class="text-[#43a9c5]">class</span> <span class="text-emerald-400">RateDescriptor</span>:
-    <span class="text-slate-500">"""Enforces positive pricing invariants"""</span>
-    <span class="text-[#43a9c5]">def</span> <span class="text-indigo-400">__set__</span>(<span class="text-amber-300">self</span>, instance, value):
-        <span class="text-[#43a9c5]">if</span> value <= 0:
-            <span class="text-[#43a9c5]">raise</span> <span class="text-rose-400">ValueError</span>(<span class="text-emerald-300">"Rate must be > 0"</span>)
-        instance.__dict__[<span class="text-amber-300">self</span>.name] = value
+                  <pre class="p-4 text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed"><span class="text-[#43a9c5]">class</span> <span class="text-emerald-400">Patient</span>:
+    <span class="text-[#43a9c5]">def</span> <span class="text-indigo-400">__init__</span>(<span class="text-amber-300">self</span>, p_id, name, age, ailment):
+        <span class="text-amber-300">self</span>.__patient_id = p_id  <span class="text-slate-500"># Encapsulation</span>
+        <span class="text-amber-300">self</span>.name = name
+        <span class="text-amber-300">self</span>.age = age
+        <span class="text-amber-300">self</span>.ailment = ailment
 
-<span class="text-[#43a9c5]">class</span> <span class="text-emerald-400">DeluxeSuite</span>(Room, BillingMixin):
-    <span class="text-slate-500"># Validated via Python MRO & Descriptors</span>
-    base_rate = RateDescriptor()</pre>
+    <span class="text-[#43a9c5]">def</span> <span class="text-emerald-400">get_details</span>(<span class="text-amber-300">self</span>):
+        <span class="text-[#43a9c5]">return</span> f<span class="text-emerald-300">"ID: {self.__patient_id} | Name: {self.name}"</span>
+
+<span class="text-[#43a9c5]">class</span> <span class="text-emerald-400">HospitalAdmin</span>:
+    <span class="text-[#43a9c5]">def</span> <span class="text-indigo-400">__init__</span>(<span class="text-amber-300">self</span>):
+        <span class="text-amber-300">self</span>.patients = []</pre>
                 </div>
               </div>
 
@@ -452,33 +447,33 @@
               <div class="p-6 sm:p-10 lg:p-12 flex flex-col justify-between space-y-6">
                 <div class="space-y-4">
                   <div class="flex items-center gap-2 text-xs font-mono text-[#016782] dark:text-[#43a9c5] font-semibold uppercase tracking-wider">
-                    <span>Advanced OOP</span>
+                    <span>Semester Project</span>
                     <span>&bull;</span>
-                    <span>Python 3.x Backend</span>
+                    <span>Python OOP</span>
                   </div>
                   <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-                    Hotel Management System
+                    Hospital Management System
                   </h3>
                   <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
-                    A comprehensive backend engine architected to master advanced Object-Oriented design. Implements strict data encapsulation, custom property descriptors for room rate validation, Method Resolution Order (MRO) across multi-class inheritance hierarchies, and functional decorators for logging and authorization.
+                    Developed as a core semester project to apply Object-Oriented Programming principles in Python. Features patient admission, doctor scheduling, ailment tracking, and billing. Demonstrates class design, private attributes for data encapsulation, and interactive menu options.
                   </p>
                   <div class="flex flex-wrap gap-2 pt-1">
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">Descriptors</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">MRO Hierarchy</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Decorators</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">Python 3.x</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">OOP Classes</span>
                     <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Encapsulation</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Data Management</span>
                   </div>
                 </div>
 
                 <div class="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-800">
-                  <a href="https://github.com/connect2waqas/Project-Base-OOP" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/connect2waqas/Hospital-managment-system" target="_blank" rel="noopener noreferrer"
                      class="px-5 py-2.5 rounded-xl bg-[#016782] hover:bg-[#015165] text-white text-xs font-semibold flex items-center gap-2 transition-colors shadow-sm">
-                    <span>Inspect Repository</span>
+                    <span>View on GitHub</span>
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
-                  <span class="text-xs font-mono text-gray-500">GitHub Verified</span>
+                  <span class="text-xs font-mono text-gray-500">Public Repo</span>
                 </div>
               </div>
 
@@ -489,18 +484,18 @@
           <div class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-2 border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden shadow-xl hover:border-[#016782]/50 transition-all duration-300">
             <div class="grid lg:grid-cols-2 gap-0">
               
-              <!-- Diagram / Model Left -->
+              <!-- Code Preview Left -->
               <div class="p-5 sm:p-8 bg-[#090d16] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-gray-800">
                 <div class="bg-slate-900/95 rounded-xl border border-slate-800 p-5 space-y-3 font-mono text-xs">
-                  <div class="text-[#016782] dark:text-cyan-400 font-bold text-xs uppercase tracking-wider">Domain Architecture Specification</div>
+                  <div class="text-[#016782] dark:text-cyan-400 font-bold text-xs uppercase tracking-wider">OOP Account Hierarchy</div>
                   <div class="p-2.5 rounded bg-slate-950/80 border border-slate-800 text-slate-300">
-                    <span class="text-amber-400 font-semibold">Actor [Customer]</span> &bull; Authenticated Request &rarr; Withdraw / Deposit
+                    <span class="text-amber-400 font-semibold">Account (Base Class)</span> &bull; balance, account_number, deposit()
                   </div>
                   <div class="p-2.5 rounded bg-slate-950/80 border border-slate-800 text-slate-300">
-                    <span class="text-cyan-400 font-semibold">Actor [Teller]</span> &bull; Overwrite Clearance &rarr; Cash Reconcile
+                    <span class="text-cyan-400 font-semibold">SavingsAccount(Account)</span> &bull; interest_rate, calculate_interest()
                   </div>
                   <div class="p-2.5 rounded bg-slate-950/80 border border-emerald-500/30 text-emerald-400">
-                    &check; ACID State Invariant: Sum(Debits) == Sum(Credits)
+                    &check; Validation: check_sufficient_balance(amount)
                   </div>
                 </div>
               </div>
@@ -509,40 +504,40 @@
               <div class="p-6 sm:p-10 lg:p-12 flex flex-col justify-between space-y-6">
                 <div class="space-y-4">
                   <div class="flex items-center gap-2 text-xs font-mono text-[#016782] dark:text-[#43a9c5] font-semibold uppercase tracking-wider">
-                    <span>Software Specification</span>
+                    <span>OOP System</span>
                     <span>&bull;</span>
-                    <span>Domain Modeling</span>
+                    <span>Software Design</span>
                   </div>
                   <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
                     Bank Management System
                   </h3>
                   <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
-                    Engineered a structured financial domain architecture. Maps out distinct system actors (Customers, Tellers, Auditors), comprehensive use-case trees, ACID transaction boundaries, and formal invariant checks to eliminate financial race conditions and data corruption prior to writing code.
+                    Designed to practice real-world object modeling in Python. Built an account hierarchy with inheritance (Savings vs Current accounts), safe balance mutations, withdrawal validation to prevent negative balances, and transaction history tracking.
                   </p>
                   <div class="flex flex-wrap gap-2 pt-1">
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">Use-Case Trees</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Actor Isolation</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">ACID Transactions</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Domain Logic</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">Inheritance</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Polymorphism</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Transaction Checks</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Python OOP</span>
                   </div>
                 </div>
 
                 <div class="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-800">
-                  <a href="https://github.com/connect2waqas" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/connect2waqas/Project-Base-OOP" target="_blank" rel="noopener noreferrer"
                      class="px-5 py-2.5 rounded-xl bg-[#016782] hover:bg-[#015165] text-white text-xs font-semibold flex items-center gap-2 transition-colors shadow-sm">
-                    <span>View Architecture</span>
+                    <span>View on GitHub</span>
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
-                  <span class="text-xs font-mono text-gray-500">System Design</span>
+                  <span class="text-xs font-mono text-gray-500">Public Repo</span>
                 </div>
               </div>
 
             </div>
           </div>
 
-          <!-- Project 3: AI Mathematics & Vectorized DSA -->
+          <!-- Project 3: Rule-Based Chatbot -->
           <div class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-2 border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden shadow-xl hover:border-[#016782]/50 transition-all duration-300">
             <div class="grid lg:grid-cols-2 gap-0">
               
@@ -550,17 +545,17 @@
               <div class="p-5 sm:p-8 bg-[#090d16] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-gray-800">
                 <div class="bg-slate-900/95 rounded-xl border border-slate-800 overflow-hidden shadow-2xl">
                   <div class="bg-slate-800/80 px-4 py-2.5 flex items-center justify-between border-b border-slate-700/60">
-                    <span class="text-xs font-mono text-cyan-300">ai_math/vectorized_loss.py</span>
-                    <span class="text-[10px] font-mono text-slate-400">NumPy Tensors</span>
+                    <span class="text-xs font-mono text-cyan-300">chatbot.py</span>
+                    <span class="text-[10px] font-mono text-slate-400">Rule-Based NLP</span>
                   </div>
-                  <pre class="p-4 text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed"><span class="text-[#43a9c5]">def</span> <span class="text-emerald-400">binary_cross_entropy</span>(y, y_hat):
-    <span class="text-slate-500"># Numerically stable vectorized loss</span>
-    eps = <span class="text-amber-300">1e-15</span>
-    y_hat = np.clip(y_hat, eps, <span class="text-amber-300">1</span> - eps)
-    <span class="text-[#43a9c5]">return</span> -np.mean(y * np.log(y_hat) + (<span class="text-amber-300">1</span> - y) * np.log(<span class="text-amber-300">1</span> - y_hat))
-
-<span class="text-slate-500"># 3D Tensor Stride & Fancy Indexing</span>
-batch_tensors = weights[np.newaxis, :, ...]</pre>
+                  <pre class="p-4 text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed"><span class="text-[#43a9c5]">def</span> <span class="text-emerald-400">respond</span>(user_input):
+    clean_text = user_input.lower().strip()
+    
+    <span class="text-[#43a9c5]">for</span> intent, keywords <span class="text-[#43a9c5]">in</span> INTENT_RULES.items():
+        <span class="text-[#43a9c5]">if</span> any(k <span class="text-[#43a9c5]">in</span> clean_text <span class="text-[#43a9c5]">for</span> k <span class="text-[#43a9c5]">in</span> keywords):
+            <span class="text-[#43a9c5]">return</span> random.choice(RESPONSES[intent])
+            
+    <span class="text-[#43a9c5]">return</span> <span class="text-emerald-300">"I'm still learning! Could you rephrase?"</span></pre>
                 </div>
               </div>
 
@@ -568,21 +563,79 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
               <div class="p-6 sm:p-10 lg:p-12 flex flex-col justify-between space-y-6">
                 <div class="space-y-4">
                   <div class="flex items-center gap-2 text-xs font-mono text-[#016782] dark:text-[#43a9c5] font-semibold uppercase tracking-wider">
-                    <span>AI Numerical Mechanics</span>
+                    <span>AI Exploration</span>
                     <span>&bull;</span>
-                    <span>Tensors &amp; DSA</span>
+                    <span>Pattern Matching</span>
                   </div>
                   <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-                    AI Mathematics &amp; Vectorization
+                    Rule-Based AI Chatbot
                   </h3>
                   <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
-                    A daily tracking algorithmic codebase exploring the computational mechanics of AI. Implements N-dimensional array broadcasting, 3D fancy tensor indexing, contiguous memory layouts, and vectorized machine learning loss routines eliminating slow Python iterative loops.
+                    An introductory project exploring conversational agents in Python. Uses dictionary-mapped intents, string normalization, and pattern recognition to understand user greetings, queries, and questions, providing a practical stepping stone towards full machine learning models.
                   </p>
                   <div class="flex flex-wrap gap-2 pt-1">
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">Array Broadcasting</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">3D Indexing</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Vectorized Loss</span>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">NumPy / Tensors</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">Pattern Matching</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Rule Logic</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">String Parsing</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Python</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-800">
+                  <a href="https://github.com/connect2waqas/RuleBaseChatBot" target="_blank" rel="noopener noreferrer"
+                     class="px-5 py-2.5 rounded-xl bg-[#016782] hover:bg-[#015165] text-white text-xs font-semibold flex items-center gap-2 transition-colors shadow-sm">
+                    <span>View on GitHub</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <span class="text-xs font-mono text-gray-500">Public Repo</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project 4: Data Science Practice with Pandas & NumPy -->
+          <div class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-2 border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden shadow-xl hover:border-[#016782]/50 transition-all duration-300">
+            <div class="grid lg:grid-cols-2 gap-0">
+              
+              <!-- Code Preview Left -->
+              <div class="p-5 sm:p-8 bg-[#090d16] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-gray-800">
+                <div class="bg-slate-900/95 rounded-xl border border-slate-800 overflow-hidden shadow-2xl">
+                  <div class="bg-slate-800/80 px-4 py-2.5 flex items-center justify-between border-b border-slate-700/60">
+                    <span class="text-xs font-mono text-cyan-300">data_analysis.ipynb</span>
+                    <span class="text-[10px] font-mono text-slate-400">Jupyter &bull; Pandas</span>
+                  </div>
+                  <pre class="p-4 text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed"><span class="text-[#43a9c5]">import</span> pandas <span class="text-[#43a9c5]">as</span> pd
+<span class="text-[#43a9c5]">import</span> numpy <span class="text-[#43a9c5]">as</span> np
+
+df = pd.read_csv(<span class="text-emerald-300">'dataset.csv'</span>)
+clean_df = df.dropna().drop_duplicates()
+
+<span class="text-slate-500"># NumPy Vectorized Normalization</span>
+raw_values = clean_df[<span class="text-emerald-300">'feature'</span>].to_numpy()
+normalized = (raw_values - np.mean(raw_values)) / np.std(raw_values)</pre>
+                </div>
+              </div>
+
+              <!-- Content Details Right -->
+              <div class="p-6 sm:p-10 lg:p-12 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                  <div class="flex items-center gap-2 text-xs font-mono text-[#016782] dark:text-[#43a9c5] font-semibold uppercase tracking-wider">
+                    <span>Data Science &bull; Lab Practice</span>
+                  </div>
+                  <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                    Data Analysis with Pandas &amp; NumPy
+                  </h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                    A repository of Jupyter notebooks covering real data science exercises: DataFrame cleaning, handling missing values, filtering and indexing, grouping, and applying NumPy array operations for statistical summarization.
+                  </p>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-[#016782]/10 text-[#016782] dark:bg-[#016782]/20 dark:text-cyan-300">NumPy Arrays</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Pandas DataFrames</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Data Cleaning</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Jupyter</span>
                   </div>
                 </div>
 
@@ -594,7 +647,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
-                  <span class="text-xs font-mono text-gray-500">Jupyter &amp; NumPy</span>
+                  <span class="text-xs font-mono text-gray-500">Public Repo</span>
                 </div>
               </div>
 
@@ -604,7 +657,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
         </div>
       </section>
 
-      <!-- LIVE GITHUB FEED -->
+      <!-- LIVE GITHUB REPOSITORIES FEED -->
       <section id="github-feed-section" class="scroll-mt-28 space-y-8">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div class="space-y-1">
@@ -612,79 +665,79 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
               <span class="w-2.5 h-2.5 rounded-full bg-[#016782] animate-pulse"></span>
               <span>Live GitHub Repositories</span>
             </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Recent Repository Activity</h2>
-            <p class="text-xs sm:text-sm text-gray-500">Synced directly with <span class="font-mono text-gray-700 dark:text-gray-300 font-semibold">@connect2waqas</span>.</p>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Recent GitHub Activity</h2>
+            <p class="text-xs sm:text-sm text-gray-500">Live query of my public code at <span class="font-mono text-gray-700 dark:text-gray-300 font-semibold">@connect2waqas</span>.</p>
           </div>
           <button id="refresh-repos-btn" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:text-[#016782] dark:hover:text-[#43a9c5] transition-all shadow-sm group self-start sm:self-auto">
             <svg id="refresh-icon" class="w-3.5 h-3.5 transition-transform duration-500 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
-            <span>Sync GitHub</span>
+            <span>Sync Repos</span>
           </button>
         </div>
 
         <div id="github-repos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <!-- Dynamically populated via JavaScript -->
+          <!-- Populated by JavaScript -->
         </div>
       </section>
 
-      <!-- JOURNEY / TIMELINE -->
+      <!-- ACADEMIC JOURNEY TIMELINE -->
       <section id="journey" class="scroll-mt-28 space-y-12">
         <div class="text-center space-y-3">
-          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Career &amp; Growth</div>
-          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Engineering Journey</h2>
+          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Academic Pathway</div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">University Studies</h2>
           <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-            My progression across Machine Learning math, backend software architecture, and system design.
+            My semester-by-semester learning progression in Computer Science in Abbottabad.
           </p>
         </div>
 
         <div class="relative max-w-3xl mx-auto">
-          <!-- Gradient Timeline Rail -->
+          <!-- Rail -->
           <div class="absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#016782] via-[#0284c7] to-transparent"></div>
 
           <div class="space-y-10 sm:space-y-12 pl-12 sm:pl-20">
             
-            <!-- Milestone 1 -->
+            <!-- 5th Semester -->
             <div class="relative group">
               <div class="absolute -left-12 sm:-left-20 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#016782] text-white flex items-center justify-center shadow-lg shadow-[#016782]/30 font-bold text-xs sm:text-sm">
-                01
+                05
               </div>
               <div class="p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-md hover:border-[#016782]/40 transition-colors">
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-mono font-semibold text-[#016782] dark:text-[#43a9c5]">2026 - Present</span>
-                  <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">Current Focus</span>
+                  <span class="text-xs font-mono font-semibold text-[#016782] dark:text-[#43a9c5]">5th Semester (Current)</span>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">In Progress</span>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mt-1">Deep AI &amp; Mathematical Vectorization</h3>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mt-1">Programming for AI &amp; Web Applications</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
-                  Focusing on low-level tensor calculus, array broadcasting, and implementing custom machine learning loss functions from scratch using NumPy.
+                  Focusing on Applied AI programming in Python, NumPy array mechanics, web application integration with Supabase (PostgreSQL), and preparing for technical internships.
                 </p>
               </div>
             </div>
 
-            <!-- Milestone 2 -->
+            <!-- 3rd & 4th Semester -->
+            <div class="relative group">
+              <div class="absolute -left-12 sm:-left-20 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#016782] text-white flex items-center justify-center shadow-lg shadow-[#016782]/30 font-bold text-xs sm:text-sm">
+                04
+              </div>
+              <div class="p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-md hover:border-[#016782]/40 transition-colors">
+                <span class="text-xs font-mono font-semibold text-[#016782] dark:text-[#43a9c5]">3rd &amp; 4th Semester</span>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mt-1">Data Structures &amp; Database Systems</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                  Covered Data Structures &amp; Algorithms (Arrays, Linked Lists, Stacks, Queues, Sorting) and Database Systems (Relational Design, SQL queries, Normalization, Three-Schema architecture). Built the Hospital Management System.
+                </p>
+              </div>
+            </div>
+
+            <!-- 1st & 2nd Semester -->
             <div class="relative group">
               <div class="absolute -left-12 sm:-left-20 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#016782] text-white flex items-center justify-center shadow-lg shadow-[#016782]/30 font-bold text-xs sm:text-sm">
                 02
               </div>
               <div class="p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-md hover:border-[#016782]/40 transition-colors">
-                <span class="text-xs font-mono font-semibold text-[#016782] dark:text-[#43a9c5]">2025 - 2026</span>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mt-1">Advanced OOP &amp; System Specifications</h3>
+                <span class="text-xs font-mono font-semibold text-[#016782] dark:text-[#43a9c5]">1st &amp; 2nd Semester</span>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mt-1">Programming Fundamentals &amp; Discrete Math</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
-                  Engineered the Hotel Management System and Bank Management System architecture, focusing on MRO, descriptors, and transaction semantics.
-                </p>
-              </div>
-            </div>
-
-            <!-- Milestone 3 -->
-            <div class="relative group">
-              <div class="absolute -left-12 sm:-left-20 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#016782] text-white flex items-center justify-center shadow-lg shadow-[#016782]/30 font-bold text-xs sm:text-sm">
-                03
-              </div>
-              <div class="p-6 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-md hover:border-[#016782]/40 transition-colors">
-                <span class="text-xs font-mono font-semibold text-[#016782] dark:text-[#43a9c5]">2024 - 2025</span>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white mt-1">Data Structures &amp; Three-Schema Relational DBs</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
-                  Mastered arrays, stacks, and trees along with relational database architectures (ANSI/SPARC Three-Schema model, PostgreSQL, and SQL).
+                  Built foundational logic in C++ and Python: control flow, functions, loops, memory concepts, discrete mathematics, and problem-solving techniques.
                 </p>
               </div>
             </div>
@@ -696,10 +749,10 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
       <!-- SKILLS MATRIX -->
       <section id="skills" class="scroll-mt-28 space-y-12">
         <div class="text-center space-y-3">
-          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Tech Stack</div>
+          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Current Toolset</div>
           <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Technical Skills</h2>
           <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-            Tooling and frameworks I leverage to design clean, high-performance software and AI systems.
+            Technologies and concepts I have studied and practically used in coursework and personal projects.
           </p>
         </div>
 
@@ -712,47 +765,47 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
             </h3>
             <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Python 3.x</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">SQL (Postgres)</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">JavaScript</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">SQL (MySQL / Postgres)</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">C++ Basics</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">JavaScript Basics</span>
             </div>
           </div>
 
           <div class="p-6 rounded-3xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-sm space-y-4 hover:border-[#016782]/40 transition-colors">
             <h3 class="font-bold text-gray-900 dark:text-white text-sm flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span>
-              <span>AI &amp; Scientific Math</span>
+              <span>Data &amp; AI Libraries</span>
             </h3>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">NumPy Tensors</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Pandas</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">NumPy Arrays</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Pandas DataFrames</span>
               <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Matplotlib</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Vectorization</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Jupyter Notebooks</span>
             </div>
           </div>
 
           <div class="p-6 rounded-3xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-sm space-y-4 hover:border-[#016782]/40 transition-colors">
             <h3 class="font-bold text-gray-900 dark:text-white text-sm flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-              <span>OOP &amp; Architecture</span>
+              <span>CS Fundamentals</span>
             </h3>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Descriptors</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Decorators</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Python MRO</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Encapsulation</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">OOP (Classes, Inheritance)</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">DSA (Stacks, Queues, Lists)</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Database Normalization</span>
             </div>
           </div>
 
           <div class="p-6 rounded-3xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 shadow-sm space-y-4 hover:border-[#016782]/40 transition-colors">
             <h3 class="font-bold text-gray-900 dark:text-white text-sm flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
-              <span>Data &amp; DevOps</span>
+              <span>Tools &amp; Platforms</span>
             </h3>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">PostgreSQL</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Supabase RLS</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Git / GitHub</span>
-              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Vercel Edge</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Git &amp; GitHub</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">VS Code</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Supabase</span>
+              <span class="px-3 py-1.5 rounded-xl text-xs font-mono bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Vercel</span>
             </div>
           </div>
 
@@ -762,10 +815,10 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
       <!-- CONTACT & VISITOR LOG -->
       <section id="contact" class="scroll-mt-28 space-y-12">
         <div class="text-center space-y-3">
-          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Get Connected</div>
+          <div class="text-xs font-mono font-semibold uppercase tracking-widest text-[#016782] dark:text-[#43a9c5]">Get in Touch</div>
           <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Let's Connect</h2>
           <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-            Have an AI research idea, engineering opportunity, or feedback? Send a direct email or leave a note in the PostgreSQL visitor log below.
+            I am currently open to summer/fall internships, project collaborations, and junior developer opportunities.
           </p>
         </div>
 
@@ -778,7 +831,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
                 <img src="assets/waqas.jpg" alt="Waqas" class="w-14 h-14 rounded-2xl object-cover border-2 border-[#016782] shadow" />
                 <div>
                   <h3 class="text-lg font-bold text-gray-900 dark:text-white">Waqas</h3>
-                  <p class="text-xs text-[#016782] dark:text-[#43a9c5] font-semibold">AI Developer &bull; Software Engineer</p>
+                  <p class="text-xs text-[#016782] dark:text-[#43a9c5] font-semibold">5th Semester CS Student</p>
                   <p class="text-[11px] text-gray-500">Abbottabad, Pakistan</p>
                 </div>
               </div>
@@ -804,27 +857,29 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
                     </svg>
                   </div>
                   <div>
-                    <div class="text-[11px] text-gray-400 font-mono">Direct Email</div>
+                    <div class="text-[11px] text-gray-400 font-mono">Email</div>
                     <a href="mailto:connect2waqas@gmail.com" class="font-medium text-xs sm:text-sm hover:text-[#016782] transition-colors">connect2waqas@gmail.com</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Social Links -->
-            <div class="flex items-center gap-3 pt-6 border-t border-gray-200 dark:border-gray-800">
-              <a href="https://github.com/connect2waqas" target="_blank" rel="noopener noreferrer"
-                 class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-[#016782] hover:text-white transition-all shadow-sm">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
-              </a>
-              <a href="https://linkedin.com/in/connect2waqas" target="_blank" rel="noopener noreferrer"
-                 class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-[#016782] hover:text-white transition-all shadow-sm">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-              </a>
-              <a href="mailto:connect2waqas@gmail.com"
-                 class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-rose-600 hover:text-white transition-all shadow-sm">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
-              </a>
+            <!-- Social Links & Resume Download -->
+            <div class="pt-6 border-t border-gray-200 dark:border-gray-800 space-y-4">
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/connect2waqas" target="_blank" rel="noopener noreferrer"
+                   class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-[#016782] hover:text-white transition-all shadow-sm" title="GitHub">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/connect2waqas" target="_blank" rel="noopener noreferrer"
+                   class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-[#016782] hover:text-white transition-all shadow-sm" title="LinkedIn">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+                <a href="mailto:connect2waqas@gmail.com"
+                   class="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-rose-600 hover:text-white transition-all shadow-sm" title="Email">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -835,10 +890,10 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
                 <svg class="w-5 h-5 text-[#016782]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
-                <span>Commit to PostgreSQL (Supabase)</span>
+                <span>Leave a Message / Visitor Log</span>
               </h3>
               <span class="text-[11px] font-mono text-[#016782] bg-[#016782]/10 px-2.5 py-1 rounded-full font-medium">
-                public.visitor_log
+                PostgreSQL Database
               </span>
             </div>
 
@@ -846,19 +901,19 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label for="visitor-name" class="block text-xs font-mono text-gray-700 dark:text-gray-300 mb-1">Your Name *</label>
-                  <input type="text" id="visitor-name" required placeholder="e.g. Alex Turing"
+                  <input type="text" id="visitor-name" required placeholder="e.g. Recruiter / Peer"
                          class="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-300 dark:border-gray-800 text-sm focus:outline-none focus:border-[#016782] focus:ring-1 focus:ring-[#016782] transition-colors" />
                 </div>
                 <div>
                   <label for="visitor-role" class="block text-xs font-mono text-gray-700 dark:text-gray-300 mb-1">Role / Organization</label>
-                  <input type="text" id="visitor-role" placeholder="e.g. AI Researcher"
+                  <input type="text" id="visitor-role" placeholder="e.g. Software Engineer"
                          class="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-300 dark:border-gray-800 text-sm focus:outline-none focus:border-[#016782] focus:ring-1 focus:ring-[#016782] transition-colors" />
                 </div>
               </div>
 
               <div>
                 <label for="visitor-message" class="block text-xs font-mono text-gray-700 dark:text-gray-300 mb-1">Message *</label>
-                <textarea id="visitor-message" required rows="3" placeholder="Leave a greeting, collaboration idea, or note..."
+                <textarea id="visitor-message" required rows="3" placeholder="Leave feedback, an internship opportunity, or say hello..."
                           class="w-full px-3.5 py-2.5 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-300 dark:border-gray-800 text-sm focus:outline-none focus:border-[#016782] focus:ring-1 focus:ring-[#016782] transition-colors resize-none"></textarea>
               </div>
 
@@ -868,15 +923,15 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
-                <span id="submit-text">Send Message &amp; Log Entry</span>
+                <span id="submit-text">Send Message</span>
               </button>
               <p id="form-status" class="text-xs text-center font-mono hidden"></p>
             </form>
 
             <div class="pt-4 border-t border-gray-200 dark:border-gray-800 space-y-3">
-              <div class="text-[11px] font-mono text-gray-500 uppercase tracking-wider">Latest PostgreSQL Records</div>
-              <div id="visitor-entries-list" class="space-y-2.5 max-h-48 overflow-y-auto pr-1">
-                <!-- Entries stream here -->
+              <div class="text-[11px] font-mono text-gray-500 uppercase tracking-wider">Latest Logged Notes</div>
+              <div id="visitor-entries-list" class="space-y-2.5 max-h-44 overflow-y-auto pr-1">
+                <!-- Injected via JavaScript -->
               </div>
             </div>
 
@@ -899,10 +954,10 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
             <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
             <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
             <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
-            <span class="text-slate-400 text-xs pl-2 truncate">connect2waqas@terminal:~</span>
+            <span class="text-slate-400 text-xs pl-2 truncate">connect2waqas@cs-terminal:~</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#016782]/20 text-cyan-300 border border-[#016782]/40 hidden xs:inline-block">AI CLI v2.4</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#016782]/20 text-cyan-300 border border-[#016782]/40 hidden xs:inline-block">Student Terminal</span>
             <button id="terminal-exit-btn" class="text-xs text-slate-300 hover:text-white px-2.5 py-1 bg-slate-800 hover:bg-slate-700 rounded transition-colors">Exit CLI</button>
           </div>
         </div>
@@ -918,8 +973,8 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
  ╚══╝╚══╝ ╚═╝  ╚═╝ ╚══▀▀═╝ ╚═╝  ╚═╝╚══════╝</pre>
 
           <div class="text-slate-400 text-xs sm:text-sm">
-            Welcome to <strong class="text-white">Waqas's Terminal Engine v2.4</strong> [Abbottabad, Pakistan].<br />
-            Type <span class="text-[#43a9c5] font-semibold">'help'</span> to see all available commands.
+            Welcome to <strong class="text-white">Waqas's CS Student Terminal</strong> [Abbottabad, Pakistan].<br />
+            Type <span class="text-[#43a9c5] font-semibold">'help'</span> to view available commands.
           </div>
 
           <div id="terminal-history" class="space-y-3">
@@ -927,7 +982,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
           </div>
 
           <form id="terminal-form" class="flex items-center gap-2 pt-2">
-            <span class="text-emerald-400 font-bold text-xs sm:text-sm shrink-0">waqas@ai-dev:~$</span>
+            <span class="text-emerald-400 font-bold text-xs sm:text-sm shrink-0">waqas@cs-student:~$</span>
             <input type="text" id="terminal-input" autocomplete="off" spellcheck="false"
                    class="flex-1 bg-transparent border-none text-white focus:outline-none font-mono text-xs sm:text-sm caret-[#016782]"
                    placeholder="Type a command (help, about, projects, skills, contact, clear)..." />
@@ -946,13 +1001,12 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
   <!-- ========================================================== -->
   <div id="ai-assistant-modal" class="fixed bottom-3 right-3 sm:bottom-6 sm:right-6 w-[94vw] sm:w-[420px] max-h-[85vh] z-50 rounded-3xl bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 shadow-2xl flex flex-col hidden overflow-hidden transition-all duration-300">
     
-    <!-- Modal Header -->
     <div class="bg-[#016782] px-5 py-4 text-white flex items-center justify-between shadow-md">
       <div class="flex items-center space-x-2.5">
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
         <div>
           <div class="font-bold text-sm tracking-tight leading-none">Waqas AI Assistant</div>
-          <div class="text-[10px] text-cyan-200 mt-0.5">Online &bull; Ask me anything</div>
+          <div class="text-[10px] text-cyan-200 mt-0.5">Online &bull; 5th Semester CS Student</div>
         </div>
       </div>
       <button id="close-ai-modal-btn" class="text-white/80 hover:text-white p-1 rounded-lg hover:bg-white/10 transition-colors" aria-label="Close Assistant">
@@ -965,26 +1019,26 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
     <!-- Suggested Question Chips -->
     <div class="p-2.5 bg-gray-50 dark:bg-gray-950/80 border-b border-gray-200 dark:border-gray-800 flex gap-1.5 overflow-x-auto text-[11px] no-scrollbar">
       <button class="ai-prompt-chip px-2.5 py-1 rounded-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-[#016782] shrink-0 transition-colors">
-        Tell me about his AI math projects
+        What semester are you in?
       </button>
       <button class="ai-prompt-chip px-2.5 py-1 rounded-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-[#016782] shrink-0 transition-colors">
-        What OOP concepts does he use?
+        What are your real projects?
       </button>
       <button class="ai-prompt-chip px-2.5 py-1 rounded-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-[#016782] shrink-0 transition-colors">
-        Where is he based?
+        Are you open to internships?
       </button>
     </div>
 
     <!-- Message Stream -->
     <div id="ai-chat-messages" class="p-4 space-y-3 overflow-y-auto flex-1 max-h-[340px] text-xs">
       <div class="p-3 rounded-2xl bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 self-start max-w-[85%] leading-relaxed shadow-sm">
-        Hello! I'm Waqas's AI Assistant. Ask me anything about his Python architecture, AI tensor research, or database engineering.
+        Hi! I'm Waqas's portfolio assistant. I can answer questions about his 5th-semester computer science studies, projects in Python and OOP, and technical skills.
       </div>
     </div>
 
     <!-- Chat Form -->
     <form id="ai-chat-form" class="p-3 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex items-center gap-2">
-      <input type="text" id="ai-chat-input" placeholder="Ask me anything..." required
+      <input type="text" id="ai-chat-input" placeholder="Ask about Waqas's studies or skills..." required
              class="flex-1 px-3.5 py-2 text-xs rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-[#016782]" />
       <button type="submit" class="p-2.5 rounded-xl bg-[#016782] hover:bg-[#015165] text-white transition-colors" aria-label="Send Message">
         <svg class="w-4 h-4 fill-current rotate-90" viewBox="0 0 24 24">
@@ -1010,15 +1064,15 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
             <img src="assets/waqas.jpg" alt="Waqas" class="h-10 w-10 rounded-full object-cover border-2 border-[#016782] shadow-md" />
             <div>
               <h3 class="text-base font-bold text-gray-900 dark:text-white">Waqas</h3>
-              <p class="text-xs text-[#016782] dark:text-[#43a9c5] font-semibold">AI Developer &bull; Engineer</p>
+              <p class="text-xs text-[#016782] dark:text-[#43a9c5] font-semibold">5th Sem CS &bull; Abbottabad</p>
             </div>
           </div>
           <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-            Engineering robust machine learning models, numerical tensor mechanics, and production OOP software architecture.
+            Computer Science undergraduate learning Python, Data Science with NumPy/Pandas, and Object-Oriented software design.
           </p>
           <div class="flex items-center space-x-2 text-xs text-gray-600 dark:text-gray-400">
             <svg class="w-4 h-4 text-[#016782]" fill="currentColor" viewBox="0 0 384 512">
-              <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>
+              <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>
             </svg>
             <span>Abbottabad, Pakistan</span>
           </div>
@@ -1029,35 +1083,35 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
           <h4 class="text-xs font-semibold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">Quick Navigation</h4>
           <ul class="space-y-2.5 text-xs text-gray-600 dark:text-gray-400">
             <li><a href="#home" class="hover:text-[#016782] transition-colors">Home</a></li>
-            <li><a href="#about" class="hover:text-[#016782] transition-colors">About &amp; Principles</a></li>
-            <li><a href="#projects" class="hover:text-[#016782] transition-colors">Featured Projects</a></li>
-            <li><a href="#journey" class="hover:text-[#016782] transition-colors">Engineering Journey</a></li>
-            <li><a href="#skills" class="hover:text-[#016782] transition-colors">Skills Matrix</a></li>
-            <li><a href="#contact" class="hover:text-[#016782] transition-colors">Contact &amp; Guestbook</a></li>
+            <li><a href="#about" class="hover:text-[#016782] transition-colors">About &amp; Studies</a></li>
+            <li><a href="#projects" class="hover:text-[#016782] transition-colors">Semester Projects</a></li>
+            <li><a href="#journey" class="hover:text-[#016782] transition-colors">Academic Studies</a></li>
+            <li><a href="#skills" class="hover:text-[#016782] transition-colors">Skills</a></li>
+            <li><a href="#contact" class="hover:text-[#016782] transition-colors">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Column 3: Highlights -->
+        <!-- Column 3: Academic Highlights -->
         <div>
-          <h4 class="text-xs font-semibold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">Highlights</h4>
+          <h4 class="text-xs font-semibold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">Current Focus</h4>
           <div class="space-y-3">
             <div class="flex items-center space-x-3">
               <div class="h-8 w-8 bg-[#016782]/10 rounded-lg flex items-center justify-center">
-                <span class="text-xs font-bold text-[#016782]">50+</span>
+                <span class="text-xs font-bold text-[#016782]">05</span>
               </div>
-              <span class="text-xs text-gray-600 dark:text-gray-400">AI Notebooks &amp; Algorithms</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400">5th Semester CS Undergrad</span>
             </div>
             <div class="flex items-center space-x-3">
               <div class="h-8 w-8 bg-[#016782]/10 rounded-lg flex items-center justify-center">
-                <span class="text-xs font-bold text-[#016782]">3+</span>
+                <span class="text-xs font-bold text-[#016782]">OOP</span>
               </div>
-              <span class="text-xs text-gray-600 dark:text-gray-400">Core Architecture Projects</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Object-Oriented Python</span>
             </div>
             <div class="flex items-center space-x-3">
               <div class="h-8 w-8 bg-[#016782]/10 rounded-lg flex items-center justify-center">
-                <span class="text-xs font-bold text-[#016782]">100%</span>
+                <span class="text-xs font-bold text-[#016782]">AI</span>
               </div>
-              <span class="text-xs text-gray-600 dark:text-gray-400">Open Source on GitHub</span>
+              <span class="text-xs text-gray-600 dark:text-gray-400">NumPy &amp; Applied Math</span>
             </div>
           </div>
         </div>
@@ -1074,11 +1128,11 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
 
           <div class="flex items-center gap-2">
             <a href="https://linkedin.com/in/connect2waqas" target="_blank" rel="noopener noreferrer"
-               class="p-2.5 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white hover:bg-[#016782] transition-colors">
+               class="p-2.5 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white hover:bg-[#016782] transition-colors" title="LinkedIn">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
             </a>
             <a href="https://github.com/connect2waqas" target="_blank" rel="noopener noreferrer"
-               class="p-2.5 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white hover:bg-gray-900 dark:hover:bg-gray-700 transition-colors">
+               class="p-2.5 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-white hover:bg-gray-900 dark:hover:bg-gray-700 transition-colors" title="GitHub">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
             </a>
           </div>
@@ -1087,7 +1141,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
       </div>
 
       <div class="pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-xs text-gray-500">
-        <p>&copy; 2026 Waqas (connect2waqas). Architected with Python Principles, Supabase PostgreSQL, and Vercel.</p>
+        <p>&copy; 2026 Waqas (connect2waqas). Built with HTML, Tailwind CSS, JavaScript &amp; Supabase.</p>
       </div>
 
     </div>
@@ -1098,7 +1152,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
   <!-- ========================================================== -->
   <script>
     /* ============================================================
-     * 1. THEME SWITCHER (LIGHT / DARK MODE)
+     * 1. THEME SWITCHER
      * ============================================================ */
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
     const themeSunIcon = document.getElementById('theme-sun-icon');
@@ -1128,7 +1182,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
     });
 
     /* ============================================================
-     * 2. MOBILE MENU DRAWER TOGGLE
+     * 2. MOBILE MENU DRAWER
      * ============================================================ */
     const mobileMenuBtn = document.getElementById('mobile-menu-toggle-btn');
     const mobileDrawer = document.getElementById('mobile-nav-drawer');
@@ -1148,7 +1202,6 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
       }
     });
 
-    // Close mobile drawer upon clicking any link
     document.querySelectorAll('.mobile-nav-link').forEach(link => {
       link.addEventListener('click', () => {
         mobileDrawer.classList.add('hidden');
@@ -1158,13 +1211,13 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
     });
 
     /* ============================================================
-     * 3. DYNAMIC TYPING HEADLINE EFFECT
+     * 3. REALISTIC STUDENT TYPING PHRASES
      * ============================================================ */
     const typingPhrases = [
-      "Specializing in Python, AI Mathematics, and Clean OOP.",
-      "Bridging Tensor Operations with Scalable Backend Systems.",
-      "Architecting Three-Schema PostgreSQL Database Systems.",
-      "Based in Abbottabad, Pakistan &bull; Open to AI Opportunities."
+      "5th-Semester Computer Science Student in Abbottabad.",
+      "Building Practical Python & Object-Oriented Projects.",
+      "Learning Data Analysis with NumPy & Pandas.",
+      "Actively seeking Software Engineering Internships."
     ];
     let phraseIndex = 0;
     let charIndex = 0;
@@ -1183,7 +1236,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
 
       let speed = isDeleting ? 25 : 55;
       if (!isDeleting && charIndex === current.length) {
-        speed = 2200; // pause at end
+        speed = 2000;
         isDeleting = true;
       } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
@@ -1196,7 +1249,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
     typeLoop();
 
     /* ============================================================
-     * 4. VIEW MODE TOGGLE: PORTFOLIO vs TERMINAL
+     * 4. VIEW MODE TOGGLE
      * ============================================================ */
     const portfolioBtn = document.getElementById('view-mode-portfolio');
     const terminalBtn = document.getElementById('view-mode-terminal');
@@ -1225,7 +1278,7 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
     terminalExitBtn.addEventListener('click', () => switchView('portfolio'));
 
     /* ============================================================
-     * 5. TERMINAL CLI COMMAND PARSER
+     * 5. STUDENT CLI TERMINAL ENGINE
      * ============================================================ */
     const terminalForm = document.getElementById('terminal-form');
     const terminalHistory = document.getElementById('terminal-history');
@@ -1233,36 +1286,40 @@ batch_tensors = weights[np.newaxis, :, ...]</pre>
 
     const terminalCommands = {
       help: `Available commands:
-  • <span class="text-cyan-300">about</span>      : Learn about Waqas's background and focus
-  • <span class="text-cyan-300">projects</span>   : Inspect featured projects (Hotel, Bank, AI Math)
-  • <span class="text-cyan-300">skills</span>     : View technical skills and proficiencies
-  • <span class="text-cyan-300">contact</span>    : Display contact coordinates and email
-  • <span class="text-cyan-300">github</span>     : Open official GitHub repository
-  • <span class="text-cyan-300">whoami</span>     : Display current terminal user context
-  • <span class="text-cyan-300">clear</span>      : Clear the terminal console
-  • <span class="text-cyan-300">exit</span>       : Return to GUI Portfolio mode`,
+  • <span class="text-cyan-300">about</span>      : Waqas's university background and focus
+  • <span class="text-cyan-300">projects</span>   : List semester projects (Hospital, Bank, Chatbot, Pandas)
+  • <span class="text-cyan-300">skills</span>     : View current programming skills & libraries
+  • <span class="text-cyan-300">studies</span>    : Semester coursework summary
+  • <span class="text-cyan-300">contact</span>    : Display email and location
+  • <span class="text-cyan-300">github</span>     : Visit GitHub profile (@connect2waqas)
+  • <span class="text-cyan-300">clear</span>      : Clear the terminal window
+  • <span class="text-cyan-300">exit</span>       : Switch back to GUI portfolio`,
 
-      about: `<strong>Waqas</strong> | Aspiring AI Developer & Software Engineer
-Location: Abbottabad, Pakistan
-Specialization: Python 3.x, NumPy Tensor Vectorization, Binary Cross-Entropy Loss, and OOP Descriptors.`,
+      about: `<strong>Waqas</strong> &bull; 5th Semester Computer Science Student
+Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan
+Focus: Python Programming, Data Science with NumPy/Pandas, Object-Oriented Software Design, and SQL Databases.
+Goal: Seeking internship opportunities to learn from senior engineers and build real-world software.`,
 
-      projects: `1. <strong>Hotel Management System</strong> (Advanced OOP, Descriptors, MRO, Decorators)
-2. <strong>Bank Management System</strong> (Domain Modeling, Actor Isolation, ACID Workflows)
-3. <strong>AI Mathematics & DSA</strong> (NumPy Tensor Vectorization, 3D Fancy Indexing, BCE Loss)`,
+      projects: `1. <strong>Hospital Management System</strong>: Python OOP semester project managing patients & appointments.
+2. <strong>Bank Management System</strong>: Object-oriented banking model with inheritance & validation.
+3. <strong>Rule-Based AI Chatbot</strong>: Pattern-matching chatbot built with Python string parsing.
+4. <strong>Data Analysis Notebooks</strong>: Jupyter notebooks practicing Pandas data cleaning & NumPy arrays.`,
 
-      skills: `Languages: Python 3.x, SQL, JavaScript
-AI / Math: NumPy, Tensors, Pandas, Matplotlib, Binary Cross-Entropy
-Architecture: Descriptors, MRO, Decorators, Three-Schema Database Design
-Tools: PostgreSQL, Supabase, Git, Vercel Edge`,
+      skills: `Languages: Python 3.x, SQL (MySQL/Postgres), C++ basics, JavaScript basics
+Libraries: NumPy, Pandas, Matplotlib, Jupyter Notebooks
+Concepts: OOP (Inheritance, Encapsulation, Polymorphism), DSA basics, Database Normalization
+Tools: VS Code, Git, GitHub, Supabase, Vercel`,
 
-      whoami: `Guest User connected to Waqas's Terminal Engine via Vercel Edge.`,
+      studies: `5th Semester: Programming for AI, Web Integration, Advanced Python
+3rd-4th Semester: Data Structures & Algorithms, Database Management Systems, OOP
+1st-2nd Semester: Programming Fundamentals (C++), Discrete Mathematics`,
 
       contact: `Email: connect2waqas@gmail.com
 GitHub: https://github.com/connect2waqas
 LinkedIn: https://linkedin.com/in/connect2waqas
-Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
+Location: Abbottabad, Pakistan`,
 
-      github: `Redirecting to https://github.com/connect2waqas ...`
+      github: `Opening https://github.com/connect2waqas ...`
     };
 
     terminalForm.addEventListener('submit', (e) => {
@@ -1291,7 +1348,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
       entry.className = 'space-y-1';
       entry.innerHTML = `
         <div class="flex items-center gap-2 text-slate-400">
-          <span class="text-emerald-400 font-bold">waqas@ai-dev:~$</span>
+          <span class="text-emerald-400 font-bold">waqas@cs-student:~$</span>
           <span class="text-white">${escapeHtml(rawCmd)}</span>
         </div>
         <div class="text-slate-300 pl-3 sm:pl-4 border-l border-[#016782]/40 whitespace-pre-wrap leading-relaxed">${response}</div>
@@ -1301,7 +1358,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
     });
 
     /* ============================================================
-     * 6. AI ASSISTANT MODAL & CONVERSATIONAL ENGINE
+     * 6. AI ASSISTANT MODAL (STUDENT KNOWLEDGE BASE)
      * ============================================================ */
     const aiModal = document.getElementById('ai-assistant-modal');
     const openAiModalBtn = document.getElementById('open-ai-modal-btn');
@@ -1355,18 +1412,18 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
     }
 
     function generateAiReply(q) {
-      if (q.includes('ai') || q.includes('math') || q.includes('tensor') || q.includes('loss')) {
-        return "Waqas focuses deeply on numerical machine learning with NumPy! He works with array broadcasting rules, 3D tensor indexing, and vectorized loss calculations (like Binary Cross-Entropy) without slow Python loops.";
-      } else if (q.includes('oop') || q.includes('python') || q.includes('descriptor') || q.includes('hotel')) {
-        return "Waqas specializes in advanced Python OOP: property descriptors for pricing invariants, Method Resolution Order (MRO) for clean inheritance, and custom logging decorators in his Hotel Management System.";
+      if (q.includes('semester') || q.includes('student') || q.includes('degree') || q.includes('university') || q.includes('college')) {
+        return "Waqas is currently a <strong>5th-semester Computer Science undergraduate</strong> student based in Abbottabad, Pakistan. He is actively learning AI, Python, and Software Engineering!";
+      } else if (q.includes('project') || q.includes('hospital') || q.includes('bank') || q.includes('chatbot')) {
+        return "His key semester projects include: 1) A <strong>Hospital Management System</strong> in Python OOP, 2) A <strong>Bank Management System</strong> practicing class inheritance, 3) A <strong>Rule-Based AI Chatbot</strong>, and 4) Data exploration notebooks with Pandas and NumPy.";
+      } else if (q.includes('intern') || q.includes('hire') || q.includes('job') || q.includes('work') || q.includes('role')) {
+        return "Yes! Waqas is actively seeking <strong>software engineering and AI internships</strong> where he can apply his Python, OOP, and data skills and learn under experienced mentorship.";
       } else if (q.includes('where') || q.includes('location') || q.includes('city') || q.includes('abbottabad')) {
-        return "Waqas is based in <strong>Abbottabad, Khyber Pakhtunkhwa, Pakistan</strong>. He is open to remote and on-site engineering roles!";
-      } else if (q.includes('bank') || q.includes('architecture')) {
-        return "His Bank Management System models software architecture: actor isolation (Customer, Teller, Auditor), use-case specifications, and ensuring strict ACID transaction boundaries.";
-      } else if (q.includes('database') || q.includes('sql') || q.includes('schema') || q.includes('supabase')) {
-        return "Waqas implements the ANSI/SPARC Three-Schema Architecture, mapping frontend view states to relational tables in PostgreSQL via Supabase, with Row-Level Security (RLS) policies enabled.";
+        return "Waqas lives in <strong>Abbottabad, Khyber Pakhtunkhwa, Pakistan</strong>. He is open to remote roles and on-site opportunities in the region!";
+      } else if (q.includes('skill') || q.includes('python') || q.includes('numpy') || q.includes('pandas')) {
+        return "Waqas's primary programming language is <strong>Python</strong>. He works with Object-Oriented Programming (OOP), Data Structures & Algorithms, NumPy arrays, Pandas DataFrames, and SQL databases (PostgreSQL & MySQL).";
       } else {
-        return `Waqas is dedicated to Python, Artificial Intelligence, and OOP. Check out his projects or visit his GitHub at <a href="https://github.com/connect2waqas" target="_blank" class="underline text-[#016782] dark:text-cyan-400">@connect2waqas</a>!`;
+        return `Waqas is a 5th-semester CS student focusing on Python, AI fundamentals, and OOP. You can check his code repositories at <a href="https://github.com/connect2waqas" target="_blank" class="underline text-[#016782] dark:text-cyan-400 font-semibold">@connect2waqas</a> or contact him directly via email!`;
       }
     }
 
@@ -1412,7 +1469,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
         const lang = repo.language || 'Code';
         const color = languageColors[lang] || languageColors['Default'];
         const date = new Date(repo.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-        const desc = repo.description ? escapeHtml(repo.description) : 'Engineering repository under active development by Waqas.';
+        const desc = repo.description ? escapeHtml(repo.description) : 'Semester / academic project repository by Waqas.';
 
         return `
           <div class="p-5 rounded-2xl bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 hover:border-[#016782]/40 flex flex-col justify-between transition-all duration-200 shadow-sm group">
@@ -1445,7 +1502,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
     function renderErrorRepos(msg) {
       reposContainer.innerHTML = `
         <div class="col-span-full p-6 text-center rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-mono">
-          Synced repositories available on GitHub: <a href="https://github.com/${GITHUB_USERNAME}" target="_blank" class="underline font-bold text-[#016782]">github.com/${GITHUB_USERNAME}</a>
+          Repositories available directly on GitHub: <a href="https://github.com/${GITHUB_USERNAME}" target="_blank" class="underline font-bold text-[#016782]">github.com/${GITHUB_USERNAME}</a>
         </div>
       `;
     }
@@ -1484,7 +1541,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
               <span>Waqas (Admin)</span>
               <span class="text-[10px] text-gray-400">PostgreSQL Ready</span>
             </div>
-            <p>Welcome to my portfolio! Connect your Supabase credentials to commit live records directly to PostgreSQL.</p>
+            <p>Welcome! Connect your Supabase credentials to commit live visitor messages directly to PostgreSQL.</p>
           </div>
         `;
         return;
@@ -1531,15 +1588,15 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
         if (!name || !message) return;
 
         submitSpinner.classList.remove('hidden');
-        submitText.textContent = 'Committing record...';
+        submitText.textContent = 'Sending message...';
         submitBtn.disabled = true;
 
         if (!isSupabaseConfigured || !supabaseClient) {
           setTimeout(() => {
             submitSpinner.classList.add('hidden');
-            submitText.textContent = 'Send Message & Log Entry';
+            submitText.textContent = 'Send Message';
             submitBtn.disabled = false;
-            formStatus.textContent = 'Simulated write: connect your Supabase credentials to persist to PostgreSQL!';
+            formStatus.textContent = 'Demo mode: connect Supabase to store messages in your live PostgreSQL database!';
             formStatus.className = 'text-xs text-center font-mono text-amber-500 block pt-1';
             visitorForm.reset();
           }, 600);
@@ -1549,7 +1606,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
         try {
           const { error } = await supabaseClient.from('visitor_log').insert([{ name, role, message }]);
           if (error) throw error;
-          formStatus.textContent = 'Successfully committed record to PostgreSQL!';
+          formStatus.textContent = 'Message sent and stored in database!';
           formStatus.className = 'text-xs text-center font-mono text-emerald-500 block pt-1';
           visitorForm.reset();
           loadVisitorLogs();
@@ -1558,7 +1615,7 @@ Location: Abbottabad, Khyber Pakhtunkhwa, Pakistan`,
           formStatus.className = 'text-xs text-center font-mono text-rose-500 block pt-1';
         } finally {
           submitSpinner.classList.add('hidden');
-          submitText.textContent = 'Send Message & Log Entry';
+          submitText.textContent = 'Send Message';
           submitBtn.disabled = false;
         }
       });

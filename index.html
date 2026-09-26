@@ -99,13 +99,24 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
+    /* 3D Hexagon Pattern Background (Matching Reference Portfolio) */
+    .hex-bg-pattern {
+      background-image: url('assets/hex-bg.png');
+      background-repeat: repeat-y;
+      background-size: 100% auto;
+      background-position: top center;
+    }
   </style>
 </head>
 
 <body class="bg-slate-50 dark:bg-[#080d16] text-slate-800 dark:text-slate-200 font-sans transition-colors duration-300 min-h-screen relative overflow-x-hidden selection:bg-[#016782] selection:text-white">
 
-  <!-- Subtle, eye-friendly ambient background glows: ONLY active in dark mode to prevent light-mode glare -->
+  <!-- Fixed 3D Hexagon Pattern & Ambient Glowing Background Layers -->
   <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+    <!-- 3D Hexagon Texture (Exact same asset and styling as reference portfolio) -->
+    <div class="absolute inset-0 hex-bg-pattern opacity-40 dark:opacity-15 transition-opacity duration-300"></div>
+
+    <!-- Subtle, eye-friendly ambient background glows: ONLY active in dark mode to prevent light-mode glare -->
     <div class="hidden dark:block absolute -top-32 left-1/2 -translate-x-1/2 w-[650px] h-[350px] bg-[#016782]/12 rounded-full blur-[140px]"></div>
     <div class="hidden dark:block absolute top-[45%] -right-40 w-[450px] h-[450px] bg-cyan-700/8 rounded-full blur-[160px]"></div>
     <div class="hidden dark:block absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-blue-800/8 rounded-full blur-[160px]"></div>

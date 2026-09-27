@@ -2,5 +2,8 @@
 Thumbs.db
 node_modules/
 .env
+.env.*
 .env.local
 *.log
+supabase-config.js
+.vercel

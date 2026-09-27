@@ -33,6 +33,9 @@
   <!-- Supabase JS SDK CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+  <!-- Git-ignored Supabase Config (Safe for local/client execution) -->
+  <script src="supabase-config.js"></script>
+
   <!-- Tailwind Configuration: Soothing, eye-friendly palette -->
   <script>
     tailwind.config = {
@@ -1730,15 +1733,18 @@ Location: Haripur, Khyber Pakhtunkhwa, Pakistan`,
     fetchGitHubRepos();
 
     /* ============================================================
-     * 8. SUPABASE POSTGRESQL VISITOR LOG
+     * 8. SECURE POSTGRESQL VISITOR LOG
+     * - Primary: Secure Serverless API (/api/visitor-log) on Vercel
+     *   (Zero Supabase credentials exposed in public browser or DevTools).
+     * - Fallback: Client SDK via git-ignored supabase-config.js
+     *   (Protects credentials from being exposed in public GitHub repos).
      * ============================================================ */
     const SUPABASE_CONFIG = {
-      url: window.SUPABASE_URL || 'https://YOUR_PROJECT_ID.supabase.co',
-      anonKey: window.SUPABASE_ANON_KEY || 'YOUR_ANON_PUBLIC_KEY'
+      url: window.SUPABASE_URL || '',
+      anonKey: window.SUPABASE_ANON_KEY || ''
     };
 
-    const isSupabaseConfigured = SUPABASE_CONFIG.url !== 'https://YOUR_PROJECT_ID.supabase.co' &&
-                                 SUPABASE_CONFIG.anonKey !== 'YOUR_ANON_PUBLIC_KEY';
+    const isSupabaseConfigured = Boolean(SUPABASE_CONFIG.url && SUPABASE_CONFIG.anonKey);
 
     const visitorForm = document.getElementById('visitor-form');
     const submitBtn = document.getElementById('submit-log-btn');
@@ -1749,10 +1755,29 @@ Location: Haripur, Khyber Pakhtunkhwa, Pakistan`,
 
     let supabaseClient = null;
     if (isSupabaseConfigured && window.supabase) {
-      supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      try {
+        supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+      } catch (e) {
+        console.warn('Supabase client initialization:', e);
+      }
     }
 
     async function loadVisitorLogs() {
+      // 1. Try secure serverless proxy first (Vercel deployment)
+      try {
+        const res = await fetch('/api/visitor-log');
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data)) {
+            renderEntries(data);
+            return;
+          }
+        }
+      } catch (e) {
+        // Fallback to client-side SDK if /api/visitor-log is not reachable (e.g. static GitHub Pages)
+      }
+
+      // 2. Fallback to direct client-side Supabase if configured via gitignored config
       if (!isSupabaseConfigured || !supabaseClient) {
         entriesList.innerHTML = `
           <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs text-slate-500 font-mono space-y-1">
@@ -1769,7 +1794,7 @@ Location: Haripur, Khyber Pakhtunkhwa, Pakistan`,
       try {
         const { data, error } = await supabaseClient
           .from('visitor_log')
-          .select('*')
+          .select('id, name, role, message, created_at')
           .order('created_at', { ascending: false })
           .limit(5);
 
@@ -1777,19 +1802,26 @@ Location: Haripur, Khyber Pakhtunkhwa, Pakistan`,
         renderEntries(data);
       } catch (err) {
         console.error('Database load error:', err);
+        if (err.message && (err.message.includes('schema cache') || err.message.includes('visitor_log'))) {
+          entriesList.innerHTML = `
+            <div class="p-3 rounded-lg bg-amber-500/10 border border-amber-500/20 text-xs text-amber-600 dark:text-amber-400 font-mono space-y-1">
+              <strong>Database Table Needed:</strong> Run the SQL script in your Supabase SQL Editor to create the <code>visitor_log</code> table.
+            </div>
+          `;
+        }
       }
     }
 
     function renderEntries(entries) {
       if (!entries || entries.length === 0) {
-        entriesList.innerHTML = `<div class="p-3 text-center text-xs text-slate-500 font-mono">No entries logged yet.</div>`;
+        entriesList.innerHTML = `<div class="p-3 text-center text-xs text-slate-500 font-mono">No entries logged yet. Be the first to leave a message!</div>`;
         return;
       }
       entriesList.innerHTML = entries.map(item => `
         <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-1">
           <div class="flex items-center justify-between text-xs">
             <span class="font-bold text-slate-900 dark:text-white">${escapeHtml(item.name)}</span>
-            <span class="text-[10px] font-mono text-slate-400">${new Date(item.created_at).toLocaleDateString()}</span>
+            <span class="text-[10px] font-mono text-slate-400">${item.created_at ? new Date(item.created_at).toLocaleDateString() : 'Just now'}</span>
           </div>
           ${item.role ? `<div class="text-[10px] font-mono text-[#016782] dark:text-[#47afcb] font-semibold">${escapeHtml(item.role)}</div>` : ''}
           <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${escapeHtml(item.message)}</p>
@@ -1810,11 +1842,27 @@ Location: Haripur, Khyber Pakhtunkhwa, Pakistan`,
         submitText.textContent = 'Sending message...';
         submitBtn.disabled = true;
 
+        // 1. Try secure serverless proxy first
+        try {
+          const apiRes = await fetch('/api/visitor-log', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, role, message })
+          });
+          if (apiRes.ok) {
+            formStatus.textContent = 'Message sent and stored in database!';
+            formStatus.className = 'text-xs text-center font-mono text-emerald-500 block pt-1';
+            visitorForm.reset();
+            loadVisitorLogs();
+            return;
+          }
+        } catch (e) {
+          // Fallback to client-side Supabase
+        }
+
+        // 2. Direct client-side SDK fallback
         if (!isSupabaseConfigured || !supabaseClient) {
           setTimeout(() => {
-            submitSpinner.classList.add('hidden');
-            submitText.textContent = 'Send Message';
-            submitBtn.disabled = false;
             formStatus.textContent = 'Demo mode: connect Supabase to store messages in your live PostgreSQL database!';
             formStatus.className = 'text-xs text-center font-mono text-amber-500 block pt-1';
             visitorForm.reset();

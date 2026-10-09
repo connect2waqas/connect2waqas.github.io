@@ -1,49 +1,74 @@
-# Waqas Ahmad | AI & Python Engineering Student Portfolio
+# Waqas Ahmad — Portfolio
 
-Personal portfolio website engineered with clean architectural principles, responsive design, and dynamic backend integration.
+This repository contains my personal portfolio website:
 
-## 🚀 Overview
-- **Developer**: Waqas Ahmad ([@connect2waqas](https://github.com/connect2waqas))
-- **Role**: AI & Python Engineering Student
-- **Degree**: B.S. Artificial Intelligence &bull; University of Haripur
-- **Internship**: AI Engineering Intern at Decode Labs (Remote - Internship)
-- **Location**: Haripur, Pakistan
+**[connect2waqas.github.io](https://connect2waqas.github.io/)**
 
----
+I built it to introduce myself, share the projects I am working on, and make it easy for recruiters and other developers to find my CV and contact me.
 
-## 🛠️ System Architecture & Technology Stack
+## About me
 
-- **Presentation Layer (External Schema)**: Semantic HTML5, Tailwind CSS (via Play CDN), Vanilla JavaScript (ES6+).
-- **Dynamic API Layer**: Real-time asynchronous GitHub REST API consumption with client-side DOM hydration and XSS escaping.
-- **Data Persistence Layer (Conceptual Schema)**: Cloud PostgreSQL database hosted on **Supabase** with Row-Level Security (RLS) policies.
-- **Hosting & CI/CD**: Global edge deployment via **Vercel** with automatic continuous deployment on `git push`.
+I am studying for a B.S. in Artificial Intelligence at the University of Haripur and currently working as an AI Engineering Intern at Decode Labs. My main interests are Python development, data structures and algorithms, object-oriented programming, data analysis, and practical AI systems.
 
----
+## What the site includes
 
-## 📂 Project Structure
+- A short introduction and current availability
+- Selected Python and AI-related projects
+- GitHub repository feed
+- Academic background and current coursework
+- Technical skills and tools
+- Downloadable PDF and Word versions of my CV
+- GitHub, LinkedIn, and email contact links
+- A visitor message form backed by a serverless API
+
+## Tech used
+
+- Semantic HTML
+- Tailwind CSS through the Play CDN
+- Vanilla JavaScript
+- GitHub REST API
+- Vercel serverless functions
+- Supabase PostgreSQL for visitor messages
+
+## Run it locally
+
+This is a mostly static site, so it can be opened with any local static server. For example, with Python installed:
+
+```bash
+python -m http.server 8000
+```
+
+Then open [http://localhost:8000](http://localhost:8000) in a browser.
+
+The visitor log needs the serverless API and its environment variables to work. Copy the example configuration files before testing that feature locally:
+
+```bash
+copy .env.example .env.local
+copy supabase-config.example.js supabase-config.js
+```
+
+Do not commit `.env.local` or `supabase-config.js`; they contain local configuration and are ignored by Git.
+
+## Project layout
 
 ```text
-connect2waqas.github.io/
-├── index.html        # Complete single-page application (Structure, Styles, Scripts)
-├── README.md         # Architecture overview & documentation
-└── .gitignore        # Version control ignore patterns
+.
+├── api/
+│   └── visitor-log.js       # Serverless visitor message endpoint
+├── assets/
+│   ├── Waqas_Ahmad_CV.pdf   # Downloadable CV
+│   ├── Waqas_Ahmad_CV.docx  # Editable CV
+│   └── ...                  # Profile and branding assets
+├── index.html                # Portfolio page and client-side logic
+└── README.md
 ```
 
----
+## Deployment
 
-## 🔒 Database Schema (PostgreSQL)
+The site is deployed on Vercel and can be updated by pushing changes to the `main` branch. The public site is also compatible with GitHub Pages for the static portion; the visitor log requires the serverless API deployment.
 
-```sql
-CREATE TABLE public.visitor_log (
-    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    created_at TIMESTAMPTZ DEFAULT now() NOT NULL,
-    name TEXT NOT NULL,
-    role TEXT,
-    message TEXT NOT NULL
-);
+## Contact
 
-ALTER TABLE public.visitor_log ENABLE ROW LEVEL SECURITY;
-
-CREATE POLICY "Allow public read access" ON public.visitor_log FOR SELECT TO anon USING (true);
-CREATE POLICY "Allow public insert" ON public.visitor_log FOR INSERT TO anon WITH CHECK (true);
-```
+- Email: [waqasnadan972@gmail.com](mailto:waqasnadan972@gmail.com)
+- GitHub: [@connect2waqas](https://github.com/connect2waqas)
+- LinkedIn: [Waqas Ahmad](https://linkedin.com/in/waqas-ahmad-578727286)

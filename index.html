@@ -163,6 +163,29 @@
       background-size: 100% auto;
       background-position: top center;
     }
+
+    /* Keep card columns shrinkable on narrow screens when code previews scroll. */
+    .project-card-grid > * {
+      min-width: 0;
+    }
+
+    @media (max-width: 420px) {
+      .portfolio-brand-role {
+        display: none;
+      }
+
+      .portfolio-brand {
+        gap: 0.5rem;
+      }
+
+      .header-controls {
+        gap: 0.25rem;
+      }
+
+      .header-controls > * {
+        flex-shrink: 0;
+      }
+    }
   </style>
 </head>
 
@@ -183,16 +206,16 @@
   <!-- 1. FLOATING RESPONSIVE HEADER                               -->
   <!-- ========================================================== -->
   <header class="fixed top-0 left-0 right-0 w-full z-50 flex justify-center pt-2 sm:pt-4 px-2.5 sm:px-4 pointer-events-none">
-    <div class="pointer-events-auto w-full max-w-5xl py-2 sm:py-2.5 px-3.5 sm:px-6 bg-white/95 dark:bg-[#0c1322]/95 backdrop-blur-lg border border-slate-200 dark:border-slate-800/80 shadow-md shadow-slate-900/5 dark:shadow-black/20 rounded-2xl transition-all duration-300 flex items-center justify-between">
+    <div class="pointer-events-auto w-full max-w-5xl min-w-0 py-2 sm:py-2.5 px-3 sm:px-6 bg-white/95 dark:bg-[#0c1322]/95 backdrop-blur-lg border border-slate-200 dark:border-slate-800/80 shadow-md shadow-slate-900/5 dark:shadow-black/20 rounded-2xl transition-all duration-300 flex items-center justify-between gap-2">
       
       <!-- Brand Logo -->
-      <a href="#home" class="flex items-center space-x-2.5 group shrink-0" aria-label="Waqas Ahmad home">
+      <a href="#home" class="portfolio-brand min-w-0 flex items-center space-x-2.5 group shrink" aria-label="Waqas Ahmad home">
         <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-[#016782] to-[#47afcb] flex items-center justify-center text-white font-mono font-bold text-xs sm:text-sm shadow-sm group-hover:scale-105 transition-transform duration-200">
           WA
         </div>
-        <div class="flex flex-col">
+        <div class="min-w-0 flex flex-col">
           <span class="text-sm sm:text-base font-bold text-slate-900 dark:text-white tracking-tight leading-none">Waqas</span>
-          <span class="text-[10px] font-mono text-[#016782] dark:text-[#47afcb] font-medium leading-tight mt-0.5">Python Developer &amp; AI Engineering Intern</span>
+          <span class="portfolio-brand-role text-[10px] font-mono text-[#016782] dark:text-[#47afcb] font-medium leading-tight mt-0.5 truncate">Python Developer &amp; AI Engineering Intern</span>
         </div>
       </a>
 
@@ -210,7 +233,7 @@
       </nav>
 
       <!-- Right Action Controls -->
-      <div class="flex items-center space-x-1.5 sm:space-x-2">
+      <div class="header-controls flex items-center space-x-1.5 sm:space-x-2 shrink-0">
         
         <!-- Mode Switcher: [Portfolio] vs [Terminal] -->
         <div class="relative p-0.5 rounded-xl bg-slate-100 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 shadow-sm flex items-center">
@@ -305,6 +328,7 @@
         <span>Contact</span>
         <span class="text-xs text-[#016782]">&rarr;</span>
       </a>
+    </nav>
   </div>
 
   <!-- ========================================================== -->
@@ -504,7 +528,7 @@
           
           <!-- Project 1: Hotel Management System -->
           <div class="bg-white dark:bg-[#0c1322] border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:border-[#016782]/40 transition-colors">
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="project-card-grid grid lg:grid-cols-2 gap-0">
               
               <!-- Code Preview Left -->
               <div class="p-4 sm:p-6 bg-[#070b12] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-slate-800/80">
@@ -565,7 +589,7 @@
 
           <!-- Project 2: OOP Coursework Repository -->
           <div class="bg-white dark:bg-[#0c1322] border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:border-[#016782]/40 transition-colors">
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="project-card-grid grid lg:grid-cols-2 gap-0">
               
               <!-- Code Preview Left -->
               <div class="p-4 sm:p-6 bg-[#070b12] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-slate-800/80">
@@ -621,7 +645,7 @@
 
           <!-- Project 3: Rule-Based Chatbot -->
           <div class="bg-white dark:bg-[#0c1322] border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:border-[#016782]/40 transition-colors">
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="project-card-grid grid lg:grid-cols-2 gap-0">
               
               <!-- Code Preview Left -->
               <div class="p-4 sm:p-6 bg-[#070b12] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-slate-800/80">
@@ -678,7 +702,7 @@
 
           <!-- Project 4: Data Science Practice with Pandas & NumPy -->
           <div class="bg-white dark:bg-[#0c1322] border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:border-[#016782]/40 transition-colors">
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="project-card-grid grid lg:grid-cols-2 gap-0">
               
               <!-- Code Preview Left -->
               <div class="p-4 sm:p-6 bg-[#070b12] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-slate-800/80">
